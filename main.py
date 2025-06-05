@@ -78,7 +78,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🚫 Добавление отменено.")
     return ConversationHandler.END
 
-app = ApplicationBuilder().token("8047969302:AAGTpCXsR3bHMagiZGT0ML1AMx55fqMrv1I").build()
+app = ApplicationBuilder().token("8047969302:AAEIlPBz9rtx3n1XV1KTY2Dz061Dq9nHIrw").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(category_selected))
 
